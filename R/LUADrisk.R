@@ -18,7 +18,7 @@ runLPRI <- function(genes_expr, parallel = 1){
     signature <- as.matrix(t(res_es)) %*% as.matrix(TCGA_gene$beta)
     res_es <- as.data.frame(t(res_es))
     res_es$LPRI <- signature
-    res_es$Risk_subgroup <- ifelse(LPRI > 0.33,"High","Low")
+    res_es$Risk_subgroup <- ifelse(signature > 0.33,"High","Low")
     res_es <- res_es %>%
       dplyr::select("Risk_subgroup", "LPRI", everything())
     return(res_es)
