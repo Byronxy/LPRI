@@ -9,7 +9,7 @@
 ## Installation
 
 ``` r
-install_github("byronxy/LPRI")
+install_github("Richard-Li-lab-team/LPRI")
 ```
 
 ## Example
