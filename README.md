@@ -24,3 +24,7 @@ library(LPRI)
 Sample_risk <- runLPRI(genes_expr)
 ```
 
+## Citation
+Please cite:
+Yi Xiong, Yihao Zhang et al., Integration of single-cell regulon atlas and multi-omics data for prognostic stratification and personalized treatment prediction in human lung adenocarcinoma (Manuscript in submission)
+
