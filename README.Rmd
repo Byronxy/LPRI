@@ -1,0 +1,62 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# LPRI
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+“LuProgRegu Index” (LPRI) is an algorithm to calculate an index to help lung cancer patients’ prognostic stratification from regulons
+
+## Installation
+
+You can install the development version from [GitHub](https://github.com/) with:
+
+```
+# install.packages("devtools")
+devtools::install_github("Richard-Li-lab-team/LPRI")
+```
+```{r}
+if (!require("GSVA")) BiocManager::install("GSVA")
+```
+
+## Example
+```{r}
+library(LPRI)
+library(dplyr)
+```
+### load data
+```{r}
+# load data required for calculate the LPRI score
+load(paste0(system.file("extdata", package = "LPRI"),"/sysdata.rda"))
+```
+```{r}
+# load gene expression profile and you can prepare you own
+# here is the example data
+load(paste0(system.file("extdata", package = "LPRI"),"/genes_expr.rda"))
+genes_expr[1:5,1:5]
+```
+
+### Run LPRI with one line
+```{r}
+Sample_risk <- runLPRI(genes_expr)
+```
+```{r}
+head(Sample_risk)
+```
+
+## Citation
+Please cite:
+Yi Xiong, Yihao Zhang et al., Integration of single-cell regulon atlas and multi-omics data for prognostic stratification and personalized treatment prediction in human lung adenocarcinoma (Manuscript in submission)
