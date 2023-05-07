@@ -9,6 +9,8 @@
 “LuProgRegu Index” (LPRI) is an algorithm to calculate an index to help
 lung cancer patients’ prognostic stratification from regulons
 
+![workflow.png](https://github.com/Richard-Li-lab-team/LPRI/blob/master/pic/workflow.png?raw=true)
+
 ## Installation
 
 You can install the development version from
