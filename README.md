@@ -102,7 +102,4 @@ head(Sample_risk)
 
 ## Citation
 
-Please cite: Yi Xiong, Yihao Zhang et al., Integration of single-cell
-regulon atlas and multi-omics data for prognostic stratification and
-personalized treatment prediction in human lung adenocarcinoma
-(Manuscript in submission)
+Please cite: Xiong, Y., Zhang, Y., Liu, N. et al. Integration of single-cell regulon atlas and multi-omics data for prognostic stratification and personalized treatment prediction in human lung adenocarcinoma. J Transl Med 21, 499 (2023). https://doi.org/10.1186/s12967-023-04331-z
